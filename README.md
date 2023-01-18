@@ -1,2 +1,2 @@
 # habit
-NLW Setup Event - Habbit project
+NLW Setup Event - Habit project
