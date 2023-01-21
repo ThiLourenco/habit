@@ -13,6 +13,6 @@ export function App() {
         <SummaryTable />
       </div>
     </div>
-  )
-}
+  );
+};
 

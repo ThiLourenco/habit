@@ -1,10 +1,10 @@
-import { Plus } from "phosphor-react";
+import { Plus } from 'phosphor-react';
 import logoImage from '../assets/logo.svg';
 
 export function Header() {
   return (
     <div className='w-full max-w-3xl max-auto flex item-center justify-between'>
-      <img src={logoImage} alt="Habits" />
+      <img src={logoImage} alt='Habits' />
 
       <button
         type='button'
@@ -14,5 +14,5 @@ export function Header() {
         Novo Hábito
       </button>
     </div>
-  )
-}
+  );
+};
