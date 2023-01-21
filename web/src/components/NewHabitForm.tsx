@@ -37,5 +37,5 @@ export function NewHabitForm() {
           Confirmar
       </button>
     </form>
-  )
-}
+  );
+};
