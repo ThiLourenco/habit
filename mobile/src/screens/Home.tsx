@@ -6,8 +6,8 @@ import { generateDatesFromYearBeginning } from "../utils/generate-dates-from-yea
 const weekDays = ["D", "S", "T", "Q", "Q", "S", "S"];
 
 const datesFromYourStart = generateDatesFromYearBeginning();
-const minimumSumaryDateSizes = 18 * 5;
-const amountOfDaysToFill = minimumSumaryDateSizes - datesFromYourStart.length;
+const minimumSummaryDateSizes = 18 * 5;
+const amountOfDaysToFill = minimumSummaryDateSizes - datesFromYourStart.length;
 
 export function Home() {
   return (
