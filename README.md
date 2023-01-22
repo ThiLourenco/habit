@@ -4,6 +4,15 @@
 
 <br>
 
+
+## 💻 Projeto
+
+O projeto é uma aplicação de resgistro de hábitos, uma aplicação completa, web e mobile.
+
+<h1 align="center">
+    <img alt="Habit tracker" src="/assets/cover.png" />
+</h1>
+
 ## 🚧 Tecnologias
 
 Esse projeto foi desenvolvido usando as seguintes tecnologias:
@@ -28,13 +37,10 @@ Você pode visualizar o layout do projeto através do link abaixo:
 
 Lembrando que você precisa ter uma conta no [Figma](http://figma.com/).
 
-## 💻 Projeto
+## Insomnia
 
-O projeto é uma aplicação de resgistro de hábitos, uma aplicação completa, web e mobile.
+[Insomnia]('./assets/Insomnia_2023-01-22.json')
 
-<h1 align="center">
-    <img alt="Habit tracker" src="/assets/cover.png" />
-</h1>
 
 ## 📝 License
 
