@@ -41,9 +41,9 @@ export function Home() {
   }, []);
 
   if(loading) {
-     return (
+    return (
       <Loading />
-     )
+    )
   }
 
   return (
