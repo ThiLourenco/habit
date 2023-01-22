@@ -4,11 +4,11 @@ import { View, Text, ScrollView, Alert } from 'react-native';
 
 import { api } from '../lib/axios';
 import { generateDatesFromYearBeginning } from '../utils/generate-dates-from-year-beginning';
+import dayjs from 'dayjs';
 
 import { HabitDay, DAY_SIZE } from '../components/HabitDay';
 import { Header } from '../components/Header';
 import { Loading } from '../components/Loading';
-import dayjs from 'dayjs';
 
 const weekDays = ['D', 'S', 'T', 'Q', 'Q', 'S', 'S'];
 
