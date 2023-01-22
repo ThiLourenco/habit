@@ -37,10 +37,6 @@ Você pode visualizar o layout do projeto através do link abaixo:
 
 Lembrando que você precisa ter uma conta no [Figma](http://figma.com/).
 
-## Insomnia
-
-[Insomnia]('./assets/Insomnia_2023-01-22.json')
-
 
 ## 📝 License
 
