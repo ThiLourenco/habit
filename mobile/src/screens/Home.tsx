@@ -1,9 +1,9 @@
-import { useState, useEffect } from 'react';
-import { useNavigation } from '@react-navigation/native';
+import { useState, useEffect, useCallback } from 'react';
+import { useFocusEffect, useNavigation } from '@react-navigation/native';
 import { View, Text, ScrollView, Alert } from 'react-native';
 
 import { api } from '../lib/axios';
-import { generateDatesFromYearBeginning } from '../utils/generate-dates-from-year-beginning';
+import { GenerateDatesFromYearBeginning } from '../utils/generate-dates-from-year-beginning';
 import dayjs from 'dayjs';
 
 import { HabitDay, DAY_SIZE } from '../components/HabitDay';
@@ -12,20 +12,20 @@ import { Loading } from '../components/Loading';
 
 const weekDays = ['D', 'S', 'T', 'Q', 'Q', 'S', 'S'];
 
-const datesFromYourStart = generateDatesFromYearBeginning();
+const datesFromYourStart = GenerateDatesFromYearBeginning();
 const minimumSummaryDateSizes = 18 * 5;
 const amountOfDaysToFill = minimumSummaryDateSizes - datesFromYourStart.length;
 
 type SummaryProps = Array<{
   id: string;
-  date: string;
+  date: Date;
   amount: number;
   completed: number;
 }>
 
 export function Home() {
-  const [loading, setLoading] = useState(true);
   const [summary, setSummary] = useState<SummaryProps | null>(null);
+  const [loading, setLoading] = useState(true);
 
   const { navigate } = useNavigation();
 
@@ -33,7 +33,6 @@ export function Home() {
     try {
       setLoading(true);
       const response = await api.get('/summary');
-      console.log(response.data);
       setSummary(response.data);
 
     } catch (error) {
@@ -44,9 +43,9 @@ export function Home() {
     }
   }
 
-  useEffect(() => {
+  useFocusEffect(useCallback(() => {
     fetchData();
-  }, []);
+  }, []));
 
   if(loading) {
     return (
@@ -84,7 +83,7 @@ export function Home() {
               
               return (
                 <HabitDay 
-                  key={date.toString()}
+                  key={date.toISOString()}
                   date={date}
                   amountOfHabits={dayWithHabits?.amount}
                   amountCompleted={dayWithHabits?.completed}
