@@ -33,7 +33,7 @@ export function New() {
     try {
 
       if(!title.trim() || weekDays.length === 0) {
-        Alert.alert('Novo Hábito', 'Informe o nome do hábito e escolha o período');
+        return Alert.alert('Novo Hábito', 'Informe o nome do hábito e escolha o período');
       }
 
       await api.post('/habits', { title, weekDays });
