@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Habit tracker" src="/assets/cover.png" />
+    <img alt="Habit tracker" src="/assets/setup.png" />
 </h1>
 
 <br>
@@ -30,9 +30,11 @@ Lembrando que você precisa ter uma conta no [Figma](http://figma.com/).
 
 ## 💻 Projeto
 
-Habit é um projeto onde conseguimos medir os hábitos criando metas semanais.
+O projeto é uma aplicação de resgistro de hábitos, uma aplicação completa, web e mobile.
 
-O projeto foi desenvolvido durante a **[NLW Setup](https://app.rocketseat.com.br/event/nlw-setup)**, apresentada entre os dias 16 e 20 de Janeiro de 2023.
+<h1 align="center">
+    <img alt="Habit tracker" src="/assets/cover.png" />
+</h1>
 
 ## 📝 License
 
