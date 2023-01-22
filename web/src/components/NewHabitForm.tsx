@@ -30,7 +30,7 @@ export function NewHabitForm() {
     } else {
       const weekDaysWithAddedOne = [...weekDays, weekDay]
 
-      setWeekDays(weekDaysWithAddedOne)
+      setWeekDays(weekDaysWithAddedOne);
     }
   } 
 
